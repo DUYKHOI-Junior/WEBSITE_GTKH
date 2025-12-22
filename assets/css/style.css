@@ -2,8 +2,6 @@
 .site-frame {
   border: 2px solid #fff0f0;
   background: #fff0f0;
-
-  /* THÊM 3 DÒNG NÀY */
   position: sticky; /* hoặc fixed, nhưng sticky mượt hơn */
   top: 0;
   z-index: 1050; /* nằm trên banner và các phần khác */
@@ -15,24 +13,22 @@
 }
 
 /* Logo: chứa icon + chữ thương hiệu */
-/* THÊM MỚI */
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 10px; /* khoảng cách giữa logo và chữ */
+  gap: 10px;
 }
 
 /* Logo image */
 .navbar-brand img {
-  max-height: 38px; /* SỬA: dùng max-height thay height cố định */
+  max-height: 38px;
   width: auto;
-  height: auto; /* THÊM: để ảnh giữ đúng tỉ lệ */
-  object-fit: contain; /* THÊM: ảnh không bị méo */
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
 /* Chữ thương hiệu */
-/* THÊM MỚI */
 .brand-name {
   font-size: 22px;
   font-weight: 700;
@@ -40,16 +36,16 @@
   letter-spacing: 0.3px;
 }
 
-/* ====== MENU CÁCH ĐỀU ĐẸP – PHIÊN BẢN 2 ====== */
+/* Menu navbar */
 .navbar-nav {
-  gap: 22px; /* tạo khoảng cách đều giữa các mục */
+  gap: 22px;
 }
 
 .nav-link {
   color: #111 !important;
   font-weight: 500;
   letter-spacing: 0.2px;
-  padding: 10px 0; /* để gap quyết định khoảng cách */
+  padding: 10px 0;
   font-size: 18px;
 }
 
@@ -71,9 +67,9 @@
   margin-right: 10px;
 }
 
-/* Hiệu ứng khi trang đang được chọn */
+/* Hiệu ứng khi trang đăng nhập/kí được chọn */
 .nav-link.active {
-  background: #f7d879; /* vàng nhạt giống hình */
+  background: #f7d879;
   font-weight: 600;
   border-radius: 10px;
   padding: 10px 20px !important;
@@ -86,27 +82,26 @@
     padding: 8px 6px;
   }
 
-  /* SỬA: đồng bộ với max-height bên trên */
+  /*đồng bộ với max-height bên trên */
   .navbar-brand img {
     max-height: 32px;
   }
 
-  /* THÊM MỚI: chữ nhỏ lại trên mobile */
   .brand-name {
     font-size: 18px;
   }
 }
 
-/* ====== BANNER / HERO ====== */
+/* ====== BANNER ====== */
 .hero-carousel {
-  border-radius: 14px; /* bo góc giống hình */
+  border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
   background: #fff;
 }
 
 .hero-img {
-  height: 420px;
+  height: 420px
   object-fit: cover;
 }
 
