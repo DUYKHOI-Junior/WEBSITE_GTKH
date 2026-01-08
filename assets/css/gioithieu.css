@@ -149,7 +149,7 @@
   margin-bottom: 0;
 }
 
-/* ========== HIỆU ỨNG FADE (kết hợp JS) ========== */
+/* ========== HIỆU ỨNG========== */
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(16px);
@@ -162,8 +162,6 @@
 }
 
 /* ========== RESPONSIVE ========== */
-
-/* Màn nhỏ: xếp dọc giống 4 khối lần lượt */
 @media (max-width: 991.98px) {
   .about-mission-box {
     padding: 24px 16px 28px;
@@ -182,7 +180,7 @@
 
   .about-who,
   .about-vision {
-    text-align: left; /* giữ cảm giác giống hình */
+    text-align: left;
   }
 
   .about-map img {

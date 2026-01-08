@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background: #e9f4fb; /* nền xanh nhạt giống hình */
+  background: #e9f4fb;
 }
 
 /* =============== KHUNG TỔNG LIÊN HỆ =============== */
@@ -28,7 +28,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* =============== PHẦN SOCIAL (LIÊN HỆ VỚI CHÚNG TÔI) =============== */
+/* =============== PHẦN LIÊN HỆ VỚI CHÚNG TÔI) =============== */
 
 .contact-header {
   background: linear-gradient(135deg, #2c5876, #4fa3c3);
@@ -43,7 +43,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* mỗi icon nằm trong 1 col (Bootstrap) */
 .icon {
   text-align: center;
 }
@@ -81,7 +80,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* Chỉ chỉnh form-control bên trong contact-form */
 .contact-form .form-control {
   border-radius: 10px;
   padding: 10px 14px;
@@ -93,7 +91,6 @@ body {
   box-shadow: 0 0 5px rgba(99, 197, 255, 0.7);
 }
 
-/* Nút GỬI – dùng class riêng, không ghi đè .btn toàn site */
 .contact-btn {
   background-color: #39a8d6;
   color: #fff;

@@ -582,12 +582,11 @@
 }
 
 /* ========== SOCIAL ICONS ========== */
-/* Khối icon, chia 3 icon mỗi hàng */
 .footer-social {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 260px; /* giúp chia thành 3 icon / hàng */
+  max-width: 260px;
 }
 
 .footer-social a {
@@ -631,7 +630,7 @@
 /* ====== LỢI ÍCH NỔI BẬT ====== */
 
 .benefits-section {
-  background: #ffffff; /* nền nhẹ cho khác với các section khác */
+  background: #ffffff;
 }
 
 .benefits-title {
