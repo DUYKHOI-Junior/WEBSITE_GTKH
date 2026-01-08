@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".fade-in-on-scroll");
 
   if (!("IntersectionObserver" in window)) {
-    // Trình duyệt cũ: hiện luôn
     elements.forEach((el) => el.classList.add("is-visible"));
     return;
   }

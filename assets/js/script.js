@@ -1,5 +1,3 @@
-// Code JavaScript dành riêng cho header nếu cần dùng sau này
-
 console.log("Header Loaded!");
 
 // Auto đánh dấu menu theo URL
