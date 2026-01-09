@@ -651,7 +651,7 @@
 }
 
 /* Icon tròn */
-.benefit-icon-wrapper {
+.benefit-icon-wrapper1 {
   width: 60px;
   height: 60px;
   border-radius: 999px;
@@ -659,7 +659,49 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 14px;
-  background: #3b4edc;
+  background: #0f9aa9;
+  color: #ffffff;
+  font-size: 1.7rem;
+  box-shadow: 0 8px 16px rgba(79, 70, 229, 0.4);
+}
+
+.benefit-icon-wrapper2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  background: #5c6ce7;
+  color: #ffffff;
+  font-size: 1.7rem;
+  box-shadow: 0 8px 16px rgba(79, 70, 229, 0.4);
+}
+
+.benefit-icon-wrapper3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  background: #329b58;
+  color: #ffffff;
+  font-size: 1.7rem;
+  box-shadow: 0 8px 16px rgba(79, 70, 229, 0.4);
+}
+
+.benefit-icon-wrapper4 {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  background: #ec7a28;
   color: #ffffff;
   font-size: 1.7rem;
   box-shadow: 0 8px 16px rgba(79, 70, 229, 0.4);
