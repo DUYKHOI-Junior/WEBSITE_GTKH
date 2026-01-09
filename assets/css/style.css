@@ -1,10 +1,11 @@
+/* HEADER */
 /* Khung ngoài giống border đen */
 .site-frame {
   border: 2px solid #fff0f0;
   background: #fff0f0;
-  position: sticky; /* hoặc fixed, nhưng sticky mượt hơn */
+  position: sticky;
   top: 0;
-  z-index: 1050; /* nằm trên banner và các phần khác */
+  z-index: 1050;
 }
 
 /* Navbar chính */
@@ -101,8 +102,8 @@
 }
 
 .hero-img {
-  height: 420px
-  object-fit: cover;
+  height: 400px;
+  width: 100%;
 }
 
 /* Dots */
@@ -212,11 +213,11 @@
 /* Button */
 .btn-event {
   display: inline-block;
-  background: #00a8ff;
+  background: #39a8d6;
   color: #fff;
-  padding: 8px 18px;
+  padding: 6px 16px;
   border-radius: 30px;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
   transition: 0.25s ease;
 }
@@ -411,17 +412,17 @@
 /* Nút Xem thêm... */
 .btn-doc {
   display: inline-block;
-  background: #4753ff;
+  background: #39a8d6;
   color: #fff;
   padding: 6px 16px;
-  border-radius: 999px;
-  font-size: 13px;
+  border-radius: 30px;
+  font-size: 14px;
   text-decoration: none;
   transition: 0.25s ease;
 }
 
 .btn-doc:hover {
-  background: #2f3acb;
+  background: #39a8d6;
 }
 
 /* Responsive */
@@ -628,11 +629,6 @@
 }
 
 /* ====== LỢI ÍCH NỔI BẬT ====== */
-
-.benefits-section {
-  background: #ffffff;
-}
-
 .benefits-title {
   font-size: 1.9rem;
 }
@@ -663,7 +659,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 14px;
-  background: linear-gradient(135deg, #6366f1, #22c1c3);
+  background: #3b4edc;
   color: #ffffff;
   font-size: 1.7rem;
   box-shadow: 0 8px 16px rgba(79, 70, 229, 0.4);
