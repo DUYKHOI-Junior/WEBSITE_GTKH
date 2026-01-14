@@ -140,9 +140,6 @@
 .section-heading {
   font-weight: 700;
   font-size: 26px;
-  position: relative;
-  line-height: 1.25;
-  color: #111;
   display: inline-block;
 }
 
@@ -302,28 +299,6 @@
 }
 
 /* ===== TÀI LIỆU NỔI BẬT ===== */
-
-/* Tiêu đề căn giữa, có gạch hai bên */
-.docs-title-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-
-.docs-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.docs-title-line {
-  flex: 1;
-  height: 1px;
-  background: #222;
-  max-width: 220px;
-}
-
 /* Card tài liệu */
 .doc-card {
   background: #fff;
@@ -360,7 +335,6 @@
   margin-bottom: 14px;
 }
 
-/* Tag “cơ bản / CSS / 30 trang” */
 .doc-tags {
   display: flex;
   flex-wrap: wrap;
@@ -376,7 +350,7 @@
   color: #2563eb;
 }
 
-/* Nút Xem thêm... */
+/* Nút Xem thêm */
 .btn-doc {
   display: inline-block;
   background: #39a8d6;
