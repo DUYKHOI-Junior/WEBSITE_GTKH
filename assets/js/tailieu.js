@@ -15,13 +15,13 @@ const sections = [
 
 let currentCategory = "all"; // lưu tab đang chọn
 
-// ======== 1b. HÀM ẨN/HIỆN CẢ SECTION ========
+// ======== 1.1. HÀM ẨN/HIỆN CẢ SECTION ========
 function updateSectionsVisibility() {
   sections.forEach((sec) => {
     const titleEl = document.getElementById(sec.titleId);
     const listEl = document.getElementById(sec.listId);
 
-    // Nếu HTML chưa có đúng id thì bỏ qua, tránh lỗi
+    // Nếu HTML chưa có đúng id thì bỏ qua.
     if (!titleEl || !listEl) return;
 
     const sectionCards = listEl.querySelectorAll(".course-card-wrapper");
@@ -35,7 +35,7 @@ function updateSectionsVisibility() {
     titleEl.style.display = displayValue;
     listEl.style.display = displayValue;
 
-    // Ẩn/hiện luôn cái gạch ngang ngay phía trên tiêu đề (nếu có)
+    // Ẩn/hiện gạch ngang ngay phía trên tiêu đề
     const divider = titleEl.previousElementSibling;
     if (divider && divider.classList.contains("section-divider")) {
       divider.style.display = displayValue;

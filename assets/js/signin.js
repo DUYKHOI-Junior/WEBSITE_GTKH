@@ -11,6 +11,19 @@ inputs.forEach((input) =>
     loginButton.classList.toggle("active", filled);
   })
 );
+// ==== Nút quay lại ====
+const backBtn = document.getElementById("backBtn");
+
+if (backBtn) {
+  backBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Nếu trước đó có trang => quay lại trang đó
+    if (document.referrer && document.referrer !== window.location.href) {
+      history.back();
+    }
+  });
+}
 
 // Hiệu ứng khi ấn "Đăng ký"
 signupBtn.addEventListener("click", (e) => {

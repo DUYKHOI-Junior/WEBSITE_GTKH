@@ -28,11 +28,11 @@ body {
 }
 
 /* ===================================== */
-/* BANNER FULL-WIDTH – GIỐNG TRANG KHOÁ HỌC */
+/* BANNER FULL-WIDTH */
 /* ===================================== */
 
 .banner {
-    padding: 0 !important;     /* bỏ padding */
+    padding: 0 !important;     
     margin: 0 !important;
 }
 
@@ -40,9 +40,9 @@ body {
     width: 100%;
     display: block;
     height: auto;
-    max-height: 340px;          /* có thể chỉnh */
+    max-height: 340px;          
     object-fit: cover;
-    border-radius: 0 !important; /* bỏ bo góc */
+    border-radius: 0 !important;
 }
 
 /* ===================================== */
@@ -75,8 +75,7 @@ body {
     }
 }
 
-/* CONTAINER TRONG CONTENT SECTION
-   => full width, sát 2 bên như ảnh Khóa học */
+/* CONTAINER TRONG CONTENT SECTION full width, sát 2 bên như ảnh Khóa học */
 .content-section > .container {
     max-width: 100%;
     width: 100%;
