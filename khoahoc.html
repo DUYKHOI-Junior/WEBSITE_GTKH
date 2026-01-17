@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khóa học | CodeZone</title>
+    <title>Khóa học |Lesson</title>
 
     <!-- Font + Icons -->
     <link
@@ -23,13 +23,14 @@
     <link rel="stylesheet" href="/assets/css/khoahoc.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
+  <
   <body>
     <header class="site-frame">
       <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
           <!-- Logo ảnh -->
           <a class="navbar-brand d-flex align-items-center" href="./index.html">
-            <img src="/image/trangchu/logo2.png" alt="Logo" />
+            <img src="./image/trangchu/logo2.png" alt="Logo" />
             <span class="brand-name">Lesson</span>
           </a>
 
@@ -53,6 +54,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="./tailieu.html">Tài liệu</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="./gioithieu.html">Giới thiệu</a>
               </li>
@@ -72,9 +74,78 @@
         </div>
       </nav>
     </header>
-    <!-- Banner -->
-    <section class="banner">
-      <img src="/image/courses/banner.webp" />
+    <!-- ========== BANNER / HERO CAROUSEL ========== -->
+    <section class="hero-section py-3">
+      <div class="container">
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade hero-carousel"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <!-- Dots (indicator) -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img
+                src="./image/courses/banner1.jpg"
+                class="d-block w-100 hero-img"
+                alt="Banner 1"
+              />
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img
+                src="./image/courses/banner2.webp"
+                class="d-block w-100 hero-img"
+                alt="Banner 2"
+              />
+            </div>
+          </div>
+
+          <!-- Nút chuyển trái / phải -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Breadcrumb -->
@@ -176,23 +247,6 @@
               ><input type="checkbox" value="expert" /> Chuyên gia</label
             >
           </div>
-
-          <!-- CỘT 3: CHỦ ĐỀ -->
-          <div class="filter-group">
-            <h4>Chủ đề</h4>
-            <label class="filter-option"
-              ><input type="checkbox" value="web" /> Cơ sở</label
-            >
-            <label class="filter-option"
-              ><input type="checkbox" value="frontend" /> Cơ bản</label
-            >
-            <label class="filter-option"
-              ><input type="checkbox" value="backend" /> Chuyên sâu</label
-            >
-            <label class="filter-option"
-              ><input type="checkbox" value="design" /> Nghề nghiệp</label
-            >
-          </div>
         </div>
 
         <div class="filter-actions">
@@ -222,7 +276,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/html-css.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/html-css.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -258,7 +314,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/python.png')"
+            style="
+              background-image: url(&quot;./image/courses/python.png&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -294,7 +352,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/javascript.png')"
+            style="
+              background-image: url(&quot;./image/courses/javascript.png&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -330,7 +390,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/reactJS.png')"
+            style="
+              background-image: url(&quot;./image/courses/reactJS.png&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -366,7 +428,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/node-express.png')"
+            style="
+              background-image: url(&quot;./image/courses/node-express.png&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -401,7 +465,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/sql.png')"
+            style="background-image: url(&quot;./image/courses/sql.png&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -436,7 +500,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/git-github.png')"
+            style="
+              background-image: url(&quot;./image/courses/git-github.png&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -471,7 +537,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/c++.png')"
+            style="background-image: url(&quot;./image/courses/c++.png&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -518,7 +584,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/pts.webp')"
+            style="background-image: url(&quot;./image/courses/pts.webp&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -553,7 +619,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/AI-ill.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/AI-ill.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -585,7 +653,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/canva.png')"
+            style="background-image: url(&quot;./image/courses/canva.png&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -619,7 +687,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/uxui.webp')"
+            style="background-image: url(&quot;./image/courses/uxui.webp&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -651,7 +719,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/figma.jpg')"
+            style="background-image: url(&quot;./image/courses/figma.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -682,7 +750,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/motion.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/motion.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -713,7 +783,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/3d.webp')"
+            style="background-image: url(&quot;./image/courses/3d.webp&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -744,7 +814,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/video.jpg')"
+            style="background-image: url(&quot;./image/courses/video.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -789,7 +859,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/giaotiep.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/giaotiep.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -823,7 +895,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/tg.jpg')"
+            style="background-image: url(&quot;./image/courses/tg.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -857,7 +929,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/team.png')"
+            style="background-image: url(&quot;./image/courses/team.png&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -891,7 +963,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/leader.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/leader.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -923,7 +997,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/mind.jpg')"
+            style="background-image: url(&quot;./image/courses/mind.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -954,7 +1028,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/damphan.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/damphan.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -985,7 +1061,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/eq.webp')"
+            style="background-image: url(&quot;./image/courses/eq.webp&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1016,7 +1092,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/cskh.jpg')"
+            style="background-image: url(&quot;./image/courses/cskh.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1061,7 +1137,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/ta.webp')"
+            style="background-image: url(&quot;./image/courses/ta.webp&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1095,7 +1171,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/jp.jpg')"
+            style="background-image: url(&quot;./image/courses/jp.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1129,7 +1205,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/ei.jpg')"
+            style="background-image: url(&quot;./image/courses/ei.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1162,7 +1238,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/korea.jpg')"
+            style="background-image: url(&quot;./image/courses/korea.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1195,7 +1271,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/toeic.avif')"
+            style="
+              background-image: url(&quot;./image/courses/toeic.avif&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1226,7 +1304,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/hsk3.jpg')"
+            style="background-image: url(&quot;./image/courses/hsk3.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1257,7 +1335,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/phap.jpg')"
+            style="background-image: url(&quot;./image/courses/phap.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1288,7 +1366,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/duc.jpg')"
+            style="background-image: url(&quot;./image/courses/duc.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1330,7 +1408,9 @@
         <div class="course-card-new hot" data-tags="figma ui ux design">
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/figma-uxui.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/figma-uxui.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1360,7 +1440,7 @@
         <div class="course-card-new" data-tags="marketing facebook tiktok ads">
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/ads.webp')"
+            style="background-image: url(&quot;./image/courses/ads.webp&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1390,7 +1470,7 @@
         <div class="course-card-new" data-tags="taichinh danhan dau tu">
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/tcdt.png')"
+            style="background-image: url(&quot;./image/courses/tcdt.png&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1420,7 +1500,9 @@
         <div class="course-card-new" data-tags="canva thietke photoshop">
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/canvapts.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/canvapts.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1453,7 +1535,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/yoga.webp')"
+            style="background-image: url(&quot;./image/courses/yoga.webp&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1484,7 +1566,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/ppt.jpg')"
+            style="background-image: url(&quot;./image/courses/ppt.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1516,7 +1598,7 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/ex.jpg')"
+            style="background-image: url(&quot;./image/courses/ex.jpg&quot;)"
           ></div>
           <div class="course-overlay">
             <h3>
@@ -1547,7 +1629,9 @@
         >
           <div
             class="course-bg"
-            style="background-image: url('./image/courses/capcut.jpg')"
+            style="
+              background-image: url(&quot;./image/courses/capcut.jpg&quot;);
+            "
           ></div>
           <div class="course-overlay">
             <h3>
