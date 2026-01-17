@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khóa học | CodeZone</title>
+    <title>Khóa học |Lesson</title>
 
     <!-- Font + Icons -->
     <link
@@ -23,13 +23,14 @@
     <link rel="stylesheet" href="/assets/css/khoahoc.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
+  <
   <body>
     <header class="site-frame">
       <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
           <!-- Logo ảnh -->
           <a class="navbar-brand d-flex align-items-center" href="./index.html">
-            <img src="/image/trangchu/logo2.png" alt="Logo" />
+            <img src="./image/trangchu/logo2.png" alt="Logo" />
             <span class="brand-name">Lesson</span>
           </a>
 
@@ -53,6 +54,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="./tailieu.html">Tài liệu</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="./gioithieu.html">Giới thiệu</a>
               </li>
@@ -72,9 +74,78 @@
         </div>
       </nav>
     </header>
-    <!-- Banner -->
-    <section class="banner">
-      <img src="/image/courses/banner.webp" />
+    <!-- ========== BANNER / HERO CAROUSEL ========== -->
+    <section class="hero-section py-3">
+      <div class="container">
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade hero-carousel"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <!-- Dots (indicator) -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img
+                src="./image/courses/banner1.jpg"
+                class="d-block w-100 hero-img"
+                alt="Banner 1"
+              />
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img
+                src="./image/courses/banner2.webp"
+                class="d-block w-100 hero-img"
+                alt="Banner 2"
+              />
+            </div>
+          </div>
+
+          <!-- Nút chuyển trái / phải -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Breadcrumb -->
