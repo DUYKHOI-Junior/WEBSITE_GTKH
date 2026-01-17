@@ -11,9 +11,7 @@ body {
     color: #1f2933;
 }
 
-/* ===================================== */
 /* Breadcrumb */
-/* ===================================== */
 
 .breadcrumb {
     padding: 14px 60px;
@@ -27,9 +25,7 @@ body {
     }
 }
 
-/* ===================================== */
 /* CONTENT SECTION */
-/* ===================================== */
 
 .content-section {
     padding: 0 60px 40px;
@@ -49,9 +45,7 @@ body {
     padding-right: 0;
 }
 
-/* ===================================== */
 /* TABS – TỰ ĐỘNG XUỐNG HÀNG */
-/* ===================================== */
 
 .category-tabs {
     display: flex;
@@ -81,9 +75,7 @@ body {
     color: #fff;
 }
 
-/* ===================================== */
 /* SEARCH */
-/* ===================================== */
 
 .search-wrapper .form-control {
     border-radius: 999px 0 0 999px;
@@ -95,9 +87,7 @@ body {
     border-radius: 0 999px 999px 0;
 }
 
-/* ===================================== */
 /* COURSE CARDS GRID */
-/* ===================================== */
 
 .course-card-wrapper {
     transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -110,8 +100,10 @@ body {
     box-shadow: 0 4px 8px rgba(15, 23, 42, 0.05);
     display: flex;
     flex-direction: column;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.course-
 .course-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
@@ -130,11 +122,22 @@ body {
 .course-title {
     font-size: 1rem;
     font-weight: 700;
+    margin: 4px 0;
 }
 
 .course-desc {
     font-size: 0.85rem;
     color: #556270;
+    margin-bottom: 0.75rem;
+}
+
+.course-body .badge,
+.course-body a {
+    border-radius: 0.4rem; 
+}
+
+.course-body .btn {
+    border-radius: 0.4rem;
 }
 
 .section-divider {
@@ -145,9 +148,7 @@ body {
     letter-spacing: 0.08em;
 }
 
-/* ===================================== */
 /* HORIZONTAL CARDS */
-/* ===================================== */
 
 .course-horizontal {
     background-color: #ffffff;
@@ -187,4 +188,13 @@ body {
     .course-horizontal {
         text-align: left;
     }
+}
+
+.course-horizontal .badge {
+    border-radius: 0.4rem;
+}
+
+.course-horizontal .badge,
+.course-horizontal a {
+    border-radius: 0.4rem; 
 }
