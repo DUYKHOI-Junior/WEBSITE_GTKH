@@ -248,20 +248,33 @@ body {
   border-radius: 999px;
 }
 
-/* Pagination */
+/* Pagination — MODERN STYLE */
 .pagination-wrapper .page-link {
   font-size: 0.85rem;
-  padding: 6px 12px;
-  border-radius: 999px;
-  margin: 0 3px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  margin: 0 4px;
   color: #374151;
+  transition: 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.pagination-wrapper .page-link:hover {
+  background: #f3f6ff;
+  border-color: #c7d2ff;
 }
 
 .pagination-wrapper .page-item.active .page-link {
-  background-color: #2563eb;
-  border-color: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border-color: transparent;
   color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(37,99,235,0.28);
 }
+
 
 /* ================== SIDEBAR ================== */
 .sidebar-box {
