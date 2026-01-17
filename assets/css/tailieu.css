@@ -11,40 +11,6 @@ body {
     color: #1f2933;
 }
 
-/* Top bar */
-.topbar {
-    background-color: #ffeef2;
-}
-
-.top-nav .top-link {
-    font-size: 0.9rem;
-    color: #555;
-    text-decoration: none;
-}
-
-.top-nav .top-link:hover,
-.top-nav .top-link.active {
-    color: #007bff;
-}
-
-/* ===================================== */
-/* BANNER FULL-WIDTH */
-/* ===================================== */
-
-.banner {
-    padding: 0 !important;     
-    margin: 0 !important;
-}
-
-.banner img {
-    width: 100%;
-    display: block;
-    height: auto;
-    max-height: 340px;          
-    object-fit: cover;
-    border-radius: 0 !important;
-}
-
 /* ===================================== */
 /* Breadcrumb */
 /* ===================================== */
@@ -75,7 +41,7 @@ body {
     }
 }
 
-/* CONTAINER TRONG CONTENT SECTION full width, sát 2 bên như ảnh Khóa học */
+/* CONTAINER TRONG CONTENT SECTION full width, sát 2 bên */
 .content-section > .container {
     max-width: 100%;
     width: 100%;
@@ -221,33 +187,4 @@ body {
     .course-horizontal {
         text-align: left;
     }
-}
-
-/* ===================================== */
-/* FOOTER */
-/* ===================================== */
-
-.site-footer {
-    background-color: #111827;
-    color: #d1d5db;
-    font-size: 0.85rem;
-}
-
-.site-footer a {
-    color: #9ca3af;
-    text-decoration: none;
-}
-
-.site-footer a:hover {
-    color: #ffffff;
-}
-
-.social-icons a {
-    width: 32px;
-    height: 32px;
-    border-radius: 999px;
-    border: 1px solid #4b5563;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

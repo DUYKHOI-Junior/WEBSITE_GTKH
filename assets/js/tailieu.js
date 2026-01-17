@@ -1,16 +1,16 @@
 // ======== 1. BIẾN CHUNG ========
 const tabs = document.querySelectorAll("#categoryTabs .nav-link");
-const cards = document.querySelectorAll(".course-card-wrapper"); // cả trên + dưới
+const cards = document.querySelectorAll(".course-card-wrapper"); 
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 
 // Các section dạng "tiêu đề + list" cần auto ẩn/hiện
 const sections = [
-  { titleId: "ngoainguTitle",  listId: "courseList"  },  // NGOẠI NGỮ
-  { titleId: "kynangTitle",    listId: "courseList1" },  // KỸ NĂNG MỀM
-  { titleId: "laptrinhTitle",  listId: "courseGrid1" },  // LẬP TRÌNH
-  { titleId: "thietkeTitle",   listId: "courseGrid2" },  // THIẾT KẾ
-  { titleId: "khacTitle",      listId: "courseGrid3" },  // KHÁC
+  { titleId: "ngoainguTitle",  listId: "courseList"  },  
+  { titleId: "kynangTitle",    listId: "courseList1" },  
+  { titleId: "laptrinhTitle",  listId: "courseGrid1" },  
+  { titleId: "thietkeTitle",   listId: "courseGrid2" },  
+  { titleId: "khacTitle",      listId: "courseGrid3" },  
 ];
 
 let currentCategory = "all"; // lưu tab đang chọn
@@ -62,7 +62,8 @@ function filterByCategory() {
     const desc = descEl ? descEl.textContent.toLowerCase() : "";
 
     const matchSearch =
-      !keyword || title.includes(keyword) || desc.includes(keyword);
+    !keyword || title.includes(keyword);
+
 
     // 3. Kết quả cuối
     card.style.display = matchCategory && matchSearch ? "" : "none";
@@ -101,6 +102,8 @@ if (searchInput) {
     if (e.key === "Enter") doSearch();
   });
 }
+
+searchInput.addEventListener("input", doSearch);
 
 // ======== 5. LẦN ĐẦU LOAD TRANG ========
 filterByCategory();
