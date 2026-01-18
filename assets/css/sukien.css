@@ -13,33 +13,6 @@ body {
   margin: 0;
 }
 
-/* ================== BANNER TRANG SỰ KIỆN ================== */
-/* Khung banner */
-.banner {
-  width: 100%;
-  max-height: 230px;      /* 👈 GIỚI HẠN CHIỀU CAO BANNER */
-  overflow: hidden;       /* Cắt bớt phần bị thừa */
-}
-
-/* Ảnh trong banner */
-.banner img {
-  width: 100%;
-  height: 100%;
-  max-height: 230px;      /* cùng giá trị với .banner */
-  object-fit: cover;      /* phóng to vừa khung, không kéo méo, phần thừa bị cắt */
-  display: block;
-}
-
-/* Mobile: banner thấp hơn một chút cho đỡ chiếm chỗ */
-@media (max-width: 768px) {
-  .banner {
-    max-height: 180px;
-  }
-  .banner img {
-    max-height: 180px;
-  }
-}
-
 /* ================== TOP SALE BANNERS ================== */
 .top-sale-banners .sale-card {
   position: relative;
@@ -128,8 +101,8 @@ body {
 }
 
 .event-thumb {
-  flex: 0 0 110px;
-  height: 88px;
+  flex: 0 0 130px; /* hoặc 120px, 140px tùy */
+  aspect-ratio: 4/3;
   border-radius: 10px;
   overflow: hidden;
   background: #e5e7eb;
