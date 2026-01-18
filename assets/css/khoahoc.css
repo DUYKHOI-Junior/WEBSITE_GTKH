@@ -9,22 +9,16 @@
   --primary: #6366f1;
   --primary-hover: #4f46e5;
   --hot-badge: #ef4444;
+  --overlay: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
 }
-
-.banner img {
-  width: 100%;
-  display: block;
-  height: 280px;
-  object-fit: cover;
-}
-
+/*tạo khoảng trống để nội dung k dính sát màn hình */
 .breadcrumb {
-  padding: 14px 60px;
+  padding: 14px 30px;
   font-size: 14px;
   color: #666;
 }
@@ -69,7 +63,6 @@
 }
 
 .search-bar button {
-  border: none;
   background-color: #22d3ee;
   color: white;
   padding: 12px 20px;
@@ -97,12 +90,11 @@
   align-items: center;
   gap: 8px;
   transition: 0.3s;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 #filterBtn:hover {
   background-color: #22d3ee;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .filter-menu {
@@ -114,8 +106,8 @@
   border-radius: 12px;
   padding: 20px;
   margin-top: 8px;
-  width: 720px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  max-width: 720px;
+  width: 85vw;
   z-index: 100;
   opacity: 0;
   visibility: hidden;
@@ -171,10 +163,6 @@
   font-weight: bold;
 }
 
-.filter-option:hover input[type="checkbox"] {
-  border-color: #22d3ee;
-}
-
 .filter-actions {
   display: flex;
   justify-content: flex-end;
@@ -205,7 +193,7 @@
 }
 
 .course-section {
-  padding: 0 60px 40px;
+  padding: 0 30px 40px;
 }
 
 .section-title {
@@ -232,7 +220,10 @@
 
 .course-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /*các thẻ khóa học lại tự nhảy hàng khi thu nhỏ màn hình */
   gap: 24px;
   padding: 0;
 }
@@ -301,18 +292,8 @@
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /* tạo hiệu ứng kính mờ */
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.course-rating {
-  color: #fbbf24;
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 /* NÚT XEM CHI TIẾT */
@@ -346,7 +327,7 @@ a {
   }
 }
 .hidden-section {
-  display: none !important;
+  display: none;
 }
 .course-card-new.hot::before {
   content: "Hot";
@@ -360,7 +341,6 @@ a {
   padding: 4px 10px;
   border-radius: 20px;
   z-index: 10;
-  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4);
 }
 
 .hidden-course {
