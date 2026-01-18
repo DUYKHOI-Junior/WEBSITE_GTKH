@@ -15,14 +15,7 @@
   display: flex;
   gap: 30px;
 }
-
-.banner img {
-  width: 100%;
-  display: block;
-  height: 280px;
-  object-fit: cover;
-}
-
+/*tạo khoảng trống để nội dung k dính sát màn hình */
 .breadcrumb {
   padding: 14px 60px;
   font-size: 14px;
@@ -114,7 +107,8 @@
   border-radius: 12px;
   padding: 20px;
   margin-top: 8px;
-  width: 720px;
+  max-width: 720px;
+  width: 85vw;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   z-index: 100;
   opacity: 0;
@@ -301,7 +295,7 @@
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /* tạo hiệu ứng kính mờ */
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -380,4 +374,11 @@ a {
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .course-section,
+  .breadcrumb,
+  .filter-section {
+    padding: 0 30px; /* Thu hẹp lề khi màn hình nhỏ */
+  }
 }
