@@ -121,6 +121,28 @@ body {
   }
 }
 
+/* Trạng thái mặc định (Chưa điền đủ) - Màu xám */
+#sendBtn {
+  background-color: #ccc; /* Màu xám */
+  color: #666;
+  cursor: not-allowed; /* Chuột hiện hình cấm */
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* Trạng thái Active (Đã điền đủ) - Màu xanh */
+#sendBtn.active {
+  background-color: #39a8d6; /* Màu xanh chủ đạo của bạn */
+  color: #fff;
+  cursor: pointer; /* Chuột hiện hình bàn tay */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#sendBtn.active:hover {
+  background-color: #007bb8;
+  transform: translateY(-2px);
+}
 /* mobile nhỏ */
 @media (max-width: 575.98px) {
   .icon img {
