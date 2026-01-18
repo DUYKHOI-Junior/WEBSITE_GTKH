@@ -9,6 +9,7 @@
   --primary: #6366f1;
   --primary-hover: #4f46e5;
   --hot-badge: #ef4444;
+  --overlay: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 .nav-links {
   list-style: none;
@@ -17,7 +18,7 @@
 }
 /*tạo khoảng trống để nội dung k dính sát màn hình */
 .breadcrumb {
-  padding: 14px 60px;
+  padding: 14px 30px;
   font-size: 14px;
   color: #666;
 }
@@ -226,7 +227,10 @@
 
 .course-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /*các thẻ khóa học lại tự nhảy hàng khi thu nhỏ màn hình */
   gap: 24px;
   padding: 0;
 }
@@ -297,16 +301,6 @@
   font-size: 12px;
   backdrop-filter: blur(4px); /* tạo hiệu ứng kính mờ */
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.course-rating {
-  color: #fbbf24;
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 /* NÚT XEM CHI TIẾT */

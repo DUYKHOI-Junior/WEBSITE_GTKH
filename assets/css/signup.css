@@ -149,7 +149,9 @@ h1 {
   border-bottom-left-radius: 100px;
   position: relative;
   z-index: 2;
-  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition:
+    transform 0.8s ease,
+    opacity 0.8s ease;
 }
 
 .right-panel.move-out h2,
@@ -234,7 +236,7 @@ h1 {
     width: 100%;
     max-width: 420px;
     height: auto;
-    flex-direction: column;  /* form trên – panel xanh dưới */
+    flex-direction: column; /* form trên – panel xanh dưới */
   }
 
   .left-panel {
