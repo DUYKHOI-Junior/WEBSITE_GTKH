@@ -200,17 +200,8 @@ body {
 @media (max-width: 767.98px) {
   .course-horizontal-img {
     max-width: 100%;
-    width: 100%;
-  }
-
-.course-horizontal-img {
-        max-width: 100%;
-        width: 100%;
-    }
-
-.course-horizontal-img img {
-        max-height: 200px;
-    }
+    width: 100%; }
+}
 
 .course-horizontal {
         text-align: left;
