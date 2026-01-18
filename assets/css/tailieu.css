@@ -147,7 +147,7 @@ body {
 }
 
 .course-body .btn {
-  border-radius: 0.4rem;
+  border-radius: 1rem;
 }
 
 .section-divider {
@@ -190,15 +190,17 @@ body {
 }
 
 .course-horizontal-img {
-  flex: 0 0 220px;
-  max-width: 220px;
+  width: 220px;       
+  aspect-ratio: 4/3;  
+  overflow: hidden;   
+  border-radius: 0;   
 }
 
 .course-horizontal-img img {
   width: 100%;
   height: 100%;
-  max-height: 170px;
-  object-fit: cover;
+  object-fit: cover;  
+  object-position: center; 
 }
 
 .course-horizontal-body {
@@ -216,13 +218,13 @@ body {
         text-align: left;
 }
 
-.course-horizontal .badge {
-  border-radius: 0.4rem;
-}
-
 .course-horizontal .badge,
 .course-horizontal a {
   border-radius: 0.4rem;
+}
+
+.course-horizontal .btn {
+  border-radius: 1rem;
 }
 
 .course-horizontal-more {
