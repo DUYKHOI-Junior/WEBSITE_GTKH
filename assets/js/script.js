@@ -1,11 +1,11 @@
-// Auto đánh dấu menu theo URL
+//đánh dấu menu hiện tại
 document.querySelectorAll(".nav-link").forEach((link) => {
   if (link.href === window.location.href) {
     link.classList.add("active");
   }
 });
 
-// banner chuyển ảnh tự động
+// chuyển tự động
 document.addEventListener("DOMContentLoaded", function () {
   const el = document.getElementById("testimonialsCarousel");
   if (el) {
