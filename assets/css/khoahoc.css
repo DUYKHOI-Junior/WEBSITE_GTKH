@@ -63,7 +63,6 @@
 }
 
 .search-bar button {
-  border: none;
   background-color: #22d3ee;
   color: white;
   padding: 12px 20px;
@@ -91,12 +90,11 @@
   align-items: center;
   gap: 8px;
   transition: 0.3s;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 #filterBtn:hover {
   background-color: #22d3ee;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .filter-menu {
@@ -110,7 +108,6 @@
   margin-top: 8px;
   max-width: 720px;
   width: 85vw;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   z-index: 100;
   opacity: 0;
   visibility: hidden;
@@ -164,10 +161,6 @@
   color: white;
   font-size: 12px;
   font-weight: bold;
-}
-
-.filter-option:hover input[type="checkbox"] {
-  border-color: #22d3ee;
 }
 
 .filter-actions {
@@ -334,7 +327,7 @@ a {
   }
 }
 .hidden-section {
-  display: none !important;
+  display: none;
 }
 .course-card-new.hot::before {
   content: "Hot";
@@ -348,7 +341,6 @@ a {
   padding: 4px 10px;
   border-radius: 20px;
   z-index: 10;
-  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4);
 }
 
 .hidden-course {
